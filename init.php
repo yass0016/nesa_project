@@ -14,12 +14,12 @@
 		}
 	}
 
-	$con = mysql_connect('localhost', 'codemod_nesa', 'yA573221');
+	$con = mysql_connect('localhost', 'nesa', '');
 	if (!$con) {
 		die('Could not connect to mysql server: ' . mysql_error());
 	}
 	
-	$db = mysql_select_db('codemod_nesa', $con);
+	$db = mysql_select_db('nesa', $con);
 	if (!$db) {
 		die ('Could not connect to database : ' . mysql_error());
 	}
